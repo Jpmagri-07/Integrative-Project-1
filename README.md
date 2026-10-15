@@ -136,10 +136,6 @@ python scripts/nome_do_script.py
 - Não suba dados sensíveis ou arquivos muito grandes.
 - Atualize este README quando adicionar novos scripts.
 
-## 📄 Licença
-
-Este projeto está sob a licença MIT. Consulte o arquivo `LICENSE` para mais detalhes.
-
 ---
 
 <p align="center">Desenvolvido por estudantes para a cidade de Londrina – PR</p>
