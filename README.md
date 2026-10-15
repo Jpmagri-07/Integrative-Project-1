@@ -33,7 +33,7 @@ O monitoramento das vias públicas é fundamental para a mobilidade, a seguranç
 
 Este repositório corresponde ao **Projeto 2 — Monitoramento de Vias Públicas de Londrina**, que faz parte do Projeto Integrador de Visão Computacional. A arquitetura é replicada nos dois projetos do grupo (o Projeto 1 trata do monitoramento ambiental e agrícola).
 
-![Organização dos Projetos de Visão Computacional](docs/arquitetura-projeto.png)
+![Organização dos Projetos de Visão Computacional](img-REDME/arquitetura-projeto.png)
 
 No Projeto 2, o fluxo é composto por três camadas:
 
