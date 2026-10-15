@@ -1,7 +1,6 @@
 # 🚦 Monitoramento de Vias Públicas de Londrina
 
 ![Status](https://img.shields.io/badge/status-em%20desenvolvimento-yellow)
-![Licença](https://img.shields.io/badge/licença-MIT-blue)
 
 Repositório dedicado ao desenvolvimento dos scripts do projeto **Monitoramento de Vias Públicas de Londrina**, cujo objetivo é coletar, processar e analisar dados sobre as condições das vias da cidade, apoiando a identificação de problemas urbanos e a tomada de decisões.
 
@@ -25,9 +24,9 @@ Repositório dedicado ao desenvolvimento dos scripts do projeto **Monitoramento 
 
 ## 📖 Sobre o projeto
 
-O monitoramento das vias públicas é fundamental para a mobilidade, a segurança e a qualidade de vida da população. Este projeto reúne scripts que automatizam etapas de coleta, tratamento e análise de dados das vias de **Londrina – PR**.
+O monitoramento das vias públicas é fundamental para promover a mobilidade urbana, aumentar a segurança no trânsito e melhorar a qualidade de vida da população. Nesse contexto, este projeto tem como objetivo automatizar etapas do processamento e da análise de dados das vias públicas de Londrina – PR, utilizando vídeos como fonte de informação. Por meio de scripts desenvolvidos em Python, os vídeos são divididos em frames (quadros), que são posteriormente analisados para identificar elementos relevantes da infraestrutura urbana, como placas de trânsito, semáforos, buracos e faixas de pedestres.
 
-*(Descreva aqui, em poucas linhas, o contexto acadêmico: disciplina, curso, instituição e professor(a) orientador(a).)*
+O projeto é desenvolvido no âmbito da disciplina de Projeto Integrador, da Universidade Tecnológica Federal do Paraná (UTFPR), campus Londrina. A disciplina tem como propósito incentivar os alunos a aplicar os conhecimentos adquiridos ao longo do curso no desenvolvimento colaborativo de soluções tecnológicas para problemas reais. Sob a orientação do professor Danilo, o trabalho busca integrar programação e visão computacional para contribuir com a análise das condições das vias urbanas e fornecer informações que possam auxiliar no planejamento e na gestão da mobilidade urbana.
 
 ## 🏗️ Arquitetura
 
@@ -55,8 +54,6 @@ A entrada do sistema são os **vídeos das vias públicas**, que passam pelo bac
 
 ## 📁 Estrutura do repositório
 
-> Ajuste a estrutura abaixo conforme as pastas reais do projeto.
-
 ```
 ├── backend/        # Visão computacional: processamento dos vídeos e detecções
 ├── frontend/       # Visualização dos dados e interação com o usuário
@@ -65,8 +62,7 @@ A entrada do sistema são os **vídeos das vias públicas**, que passam pelo bac
 ├── dados/          # Vídeos e dados brutos/processados
 ├── docs/           # Documentação, imagens e relatórios
 ├── notebooks/      # Testes e análises exploratórias
-├── requirements.txt
-└── README.md
+└── README.md       # Descrição do repositório no GitHub
 ```
 
 ## 🛠️ Tecnologias
@@ -75,7 +71,7 @@ A entrada do sistema são os **vídeos das vias públicas**, que passam pelo bac
 
 - [Python](https://www.python.org/)
 - [Git](https://git-scm.com/) e [GitHub](https://github.com/)
-- *(ex.: OpenCV, YOLO/PyTorch, Pandas, banco de dados, framework do front-end…)*
+- *(ex.: OpenCV, YOLO/PyTorch, banco de dados, flask)*
 
 ## 🚀 Como executar
 
@@ -112,7 +108,7 @@ python scripts/nome_do_script.py
 
 | Integrante | GitHub |
 |------------|--------|
-| João Pedro Magri | [@usuario](https://github.com/usuario) |
+| João Pedro Magri | [@Jpmagri-07](https://github.com/Jpmagri-07) |
 | Libina | [@usuario](https://github.com/usuario) |
 | Larissa | [@usuario](https://github.com/usuario) |
 | Vitória | [@usuario](https://github.com/usuario) |
@@ -146,4 +142,4 @@ Este projeto está sob a licença MIT. Consulte o arquivo `LICENSE` para mais de
 
 ---
 
-<p align="center">Desenvolvido com 💙 por estudantes para a cidade de Londrina – PR</p>
+<p align="center">Desenvolvido por estudantes para a cidade de Londrina – PR</p>
