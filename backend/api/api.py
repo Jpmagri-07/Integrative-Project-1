@@ -66,7 +66,7 @@ def verificar_frames(pasta, quantidade_esperada=None):
         raise ValueError(f'Esperados {quantidade_esperada} frames, recebidos {len(numeros)}.')
     return numeros[0], extensoes.pop(), len(numeros)
 
-
+# Recebe o vídeo original, salva e identifica seu FPS.
 @app.post('/videos')
 def enviar_video():
     arquivo = request.files.get('video')
@@ -94,7 +94,8 @@ def enviar_video():
                         'fps': fps, 'result': None, 'error': None}
     return jsonify(job_id=job_id, status='waiting_frames', original_fps=fps), 201
 
-
+	
+# Permite baixar o vídeo original
 @app.get('/videos/<job_id>/original')
 def baixar_original(job_id):
     job, erro = buscar_job(job_id)
@@ -102,7 +103,7 @@ def baixar_original(job_id):
         return erro
     return send_file(job['original'], as_attachment=True)
 
-
+# Recebe e armazena os frames do vídeo
 @app.post('/videos/<job_id>/frames')
 def enviar_frames(job_id):
     job, erro = buscar_job(job_id)
@@ -168,7 +169,7 @@ def montar_video(job_id, fps, quantidade_esperada):
         with lock:
             jobs[job_id].update(status='error', result=None, error=mensagem)
 
-
+# Inicia a montagem do vídeo utilizando os frames recebidos
 @app.post('/videos/<job_id>/finalize')
 def finalizar(job_id):
     job, erro = buscar_job(job_id)
@@ -202,7 +203,7 @@ def finalizar(job_id):
         return jsonify(error='Não foi possível iniciar a montagem.'), 500
     return jsonify(status='assembling', fps=fps), 202
 
-
+# Consulta o estado atual do processamento
 @app.get('/videos/<job_id>/status')
 def consultar_status(job_id):
     job, erro = buscar_job(job_id)
@@ -211,7 +212,8 @@ def consultar_status(job_id):
     with lock:
         return jsonify(status=job['status'], error=job['error'])
 
-
+	
+# Permite baixar o vídeo finalizado
 @app.get('/videos/<job_id>/result')
 def baixar_resultado(job_id):
     job, erro = buscar_job(job_id)
